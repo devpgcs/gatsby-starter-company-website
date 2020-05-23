@@ -1,0 +1,59 @@
+{
+  "HEADER": [
+    {
+      "title": "This is how it works",
+      "subtitle": "Say Goodbye to Spreadsheets and Wall Calendars. Say Hello to Modern Task and Employee Scheduling Software Today"
+    }
+  ],
+
+  "TASK": [
+    {
+      "id": 1,
+      "imgl": "",
+      "imgr": "",
+      "text": "Instead of sorting through post-its on your desk,",
+      "itext": "your new dashboard will quickly let you know your day's most important tasks."
+    },
+    {
+      "id": 2,
+      "imgl": "",
+      "imgr": "",
+      "text": "Instead of clicking through multiple screens and spreadsheets, your",
+      "itext": "Master Calendar will give you a 10,000ft view of everything that is happening across all your properties"
+    },
+    {
+      "id": 3,
+      "imgl": "",
+      "imgr": "",
+      "text": "Instead of copying check in and check out dates to a messy scheduling spreadsheet, your",
+      "itext": "drag and drop scheduling calendar makes optimizing your staffing easy."
+    }
+  ],
+
+  "RULES": [
+    {
+      "id": 1,
+      "text": "Highly adjustable to maximize automation. Company has rules that accomodate things like:"
+    },
+    {
+      "id": 2,
+      "text": "Create an arrival cleaning only if the unit has been vacant for more than 3 days."
+    },
+    {
+      "id": 3,
+      "text": "Create hot tub services only if the unit has a hot tub."
+    },
+    {
+      "id": 4,
+      "text": "Create 6 month deep cleans or inventory checks."
+    },
+    {
+      "id": 5,
+      "text": "Create an inspection mid vacancy check every 7 days, starting 6 days after the last checkout and ending 5 days before the next check in."
+    },
+    {
+      "id": 6,
+      "text": "Need a new rule? Just ask, we can most likely accomodate you!"
+    }
+  ]
+}

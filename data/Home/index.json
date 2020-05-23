@@ -1,0 +1,244 @@
+{
+  "MENU_ITEMS": [
+    {
+      "id": 1,
+      "label": "Home",
+      "path": "/"
+    },
+    {
+      "id": 2,
+      "label": "How it works",
+      "path": "/about"
+    },
+    {
+      "id": 3,
+      "label": "Pricing",
+      "path": "/pricing"
+    },
+    {
+      "id": 4,
+      "label": "Integrations",
+      "path": "/integrations"
+    },
+    {
+      "id": 5,
+      "label": "Features",
+      "path": "/features"
+    },
+    {
+      "id": 6,
+      "label": "Blog",
+      "path": "/blog"
+    }
+  ],
+
+  "BANNER": [
+    {
+      "id": [1, 2, 3],
+      "logo": "",
+      "title": "Yes, I want to Automate my",
+      "titleStrong": "vacation rental workflow ",
+      "subtitle": "Relax! Just create custom rules to generate cleans, inspections and any other task for each booking.",
+      "note": "*Psst, you can also",
+      "noteLink": "sing up",
+      "noteContinue": "to get a FREE TRIAL with no credit card required",
+      "image": ""
+    }
+  ],
+
+  "FEATURES": [
+    {
+      "id": 1,
+      "image": "",
+      "text": "No more post its. Store it all here"
+    },
+    {
+      "id": 2,
+      "image": "",
+      "text": "Auto generate tasks by rules"
+    },
+    {
+      "id": 3,
+      "image": "",
+      "text": "Drag and Drop Scheduling"
+    },
+    {
+      "id": 4,
+      "image": "",
+      "text": "Email and text last min stays"
+    },
+    {
+      "id": 5,
+      "image": "",
+      "text": "Mobile friendly dashboards"
+    },
+    {
+      "id": 6,
+      "image": "",
+      "text": "Checklists to get the job done"
+    },
+    {
+      "id": 7,
+      "image": "",
+      "text": "Completion Notifications"
+    },
+    {
+      "id": 8,
+      "image": "",
+      "text": "Task and booking history reports"
+    }
+  ],
+
+  "industries_FEATURES": [
+    {
+      "id": 1,
+      "text": "Throw away the white boards, wall calendars and appointment books. Now you can manage your properties from anywhere."
+    },
+    {
+      "id": 2,
+      "text": "And you don’t even have to worry, because FINALLY... There’s a tool built specifically to schedule employees around Vacation Rental dates along side your private homes."
+    }
+  ],
+
+  "INDUSTRIES": [
+    {
+      "id": 1,
+      "image": "",
+      "text": "Property Managers"
+    },
+    {
+      "id": 2,
+      "image": "",
+      "text": "Hot Tub Service Companies"
+    },
+    {
+      "id": 3,
+      "image": "",
+      "text": "Vacation Rental Owners"
+    },
+    {
+      "id": 4,
+      "image": "",
+      "text": "Cleaning Companies"
+    }
+  ],
+
+  "OPINIONS": [
+    {
+      "id": 1,
+      "photo": "",
+      "name": "Jamie",
+      "profession": "Finishing Touch Cabin Rental & Concierge Services since 2008"
+    },
+    {
+      "id": 2,
+      "photo": "",
+      "name": "Roman",
+      "profession": "Finishing Touch Cabin Rental & Concierge Services since 2008"
+    },
+    {
+      "id": 3,
+      "photo": "",
+      "name": "Damian",
+      "profession": "Finishing Touch Cabin Rental & Concierge Services since 2008"
+    }
+  ],
+
+  "FOOTER_MEMBERS": [
+    {
+      "id": 1,
+      "class": "col one",
+      "img": [
+        {
+          "id": 1,
+          "source": "source"
+        },
+        {
+          "id": 2,
+          "source": "source"
+        },
+        {
+          "id": 3,
+          "source": "source"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "class": "col two",
+      "img": [
+        {
+          "id": 1,
+          "source": "source"
+        },
+        {
+          "id": 2,
+          "source": "source"
+        }
+      ]
+    }
+  ],
+
+  "FOOTER_LINKS": [
+    {
+      "id": 1,
+      "link": [
+        {
+          "id": 1,
+          "title": "Reviews",
+          "path": "/"
+        },
+        {
+          "id": 2,
+          "title": "Features",
+          "path": "/features"
+        },
+        {
+          "id": 3,
+          "title": "Pricing",
+          "path": "/pricing"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "link": [
+        {
+          "id": 1,
+          "title": "Blog",
+          "path": "/blog"
+        },
+        {
+          "id": 2,
+          "title": "How it works",
+          "path": "/about"
+        },
+        {
+          "id": 3,
+          "title": "Integrations",
+          "path": "/integrations"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "link": [
+        {
+          "id": 1,
+          "title": "Demo",
+          "path": "/"
+        },
+        {
+          "id": 2,
+          "title": "Log in",
+          "path": "/"
+        },
+        {
+          "id": 3,
+          "title": "Sing up",
+          "path": "/"
+        }
+      ]
+    }
+  ]
+}

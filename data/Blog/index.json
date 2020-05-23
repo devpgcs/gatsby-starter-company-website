@@ -1,0 +1,70 @@
+{
+  "BLOG_RECOMENDATIONS": [
+    {
+      "id": 1,
+      "image": "source",
+      "post": "Booking",
+      "title": "Bookings in holiday seasons",
+      "date": "January 07, 2020 | Company"
+    },
+    {
+      "id": 2,
+      "image": "source",
+      "post": "Holidays",
+      "title": "To take a trivial example, which of us...",
+      "date": "January 07, 2020 | Company"
+    },
+    {
+      "id": 3,
+      "image": "source",
+      "post": "Holidays",
+      "title": "Nor again is there anyone who loves or...",
+      "date": "January 07, 2020 | Company"
+    }
+  ],
+
+  "BLOG_RECENTS": [
+    {
+      "id": 1,
+      "image": "source",
+      "post": "Booking",
+      "title": "Bookings in holiday seasons",
+      "date": "January 07, 2020 | Company"
+    },
+    {
+      "id": 2,
+      "image": "source",
+      "post": "Holidays",
+      "title": "To take a trivial example, which of us...",
+      "date": "January 07, 2020 | Company"
+    },
+    {
+      "id": 3,
+      "image": "source",
+      "post": "Holidays",
+      "title": "Nor again is there anyone who loves or...",
+      "date": "January 07, 2020 | Company"
+    },
+    {
+      "id": 4,
+      "image": "source",
+      "post": "Booking",
+      "title": "Bookings in holiday seasons",
+      "date": "January 07, 2020 | Company"
+    },
+    {
+      "id": 5,
+      "image": "source",
+      "post": "Holidays",
+      "title": "To take a trivial example, which of us...",
+      "date": "January 07, 2020 | Company"
+    },
+    {
+      "id": 6,
+      "image": "source",
+      "post": "Holidays",
+      "title": "Nor again is there anyone who loves or...",
+      "date": "January 07, 2020 | Company"
+    }
+  ]
+}
