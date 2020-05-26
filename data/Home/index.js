@@ -62,33 +62,23 @@ export const OPINIONS = [
 export const FOOTER_LINKS = [
   {
     id: 1,
-    link: [
-      {
-        id: 1,
-        title: "Reviews",
-        path: "/",
-      },
-      {
-        id: 2,
-        title: "Features",
-        path: "/",
-      },
-    ],
+    title: "Reviews",
+    path: "/",
   },
   {
     id: 2,
-    link: [
-      {
-        id: 1,
-        title: "Blog",
-        path: "/",
-      },
-      {
-        id: 2,
-        title: "How it works",
-        path: "/",
-      },
-    ],
+    title: "Features",
+    path: "/",
+  },
+  {
+    id: 3,
+    title: "Blog",
+    path: "/",
+  },
+  {
+    id: 4,
+    title: "How it works",
+    path: "/",
   },
 ]
 

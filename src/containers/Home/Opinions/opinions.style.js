@@ -5,6 +5,9 @@ const OpinionsWrapper = styled.section`
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 30px;
+    @media(max-width: 1024px) {
+      max-width: 750px;
+    }
 
     .border {
       width: 40px;
@@ -17,8 +20,20 @@ const OpinionsWrapper = styled.section`
       width: 100%;
       text-align: center;
 
-      h2 { margin-bottom: 30px; }
-      p { max-width: 550px; margin: 0 auto; }
+      h2 {
+        margin-bottom: 30px;
+        @media (max-width: 768px) {
+          font-size: 20px;
+        }
+      }
+
+      p {
+        max-width: 550px;
+        margin: 0 auto;
+        @media (max-width: 768px) {
+          font-size: 14px;
+        }
+      }
     }
 
     .posted-images {
@@ -41,12 +56,18 @@ const OpinionsWrapper = styled.section`
       max-width: 850px;
       margin: 30px auto;
       text-align: center;
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
     }
 
     .perfil-wrapper {
       max-width: 400px;
       margin: 0 auto;
       text-align: center;
+      @media (max-width: 768px) {
+        p { font-size: 14px; }
+      }
 
       img {
         display: block;

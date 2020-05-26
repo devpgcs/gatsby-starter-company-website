@@ -36,12 +36,10 @@ const Banner = () => {
           </Heading>
           <Heading as="h2" title={item.subtitle} theme='text'/>
           <Button
-            url="/"
             theme='primary'
             type="button"
             className="demo-btn"
-            title="I want my demo"
-          />
+          ><Link to="/">I want my demo</Link></Button>
           <Text className="sing-up">
             {item.note} <Link to="/">{item.noteLink}</Link> {item.noteContinue}
           </Text>

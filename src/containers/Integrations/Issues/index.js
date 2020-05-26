@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import IssuesWrapper from './issues.style'
 import Container from '../../../components/Container'
 import Heading from '../../../components/Heading'
@@ -10,19 +11,12 @@ export const Issues = () => {
       <Container className="case">
         <Heading as="h2" theme="headings" title="Any issue?"/>
         <Container className="buttons-wrapper">
-          <Button
-            url="/"
-            theme="inverted"
-            txt="inverted"
-            type="button"
-            title="My booking software is not listed"
-          />
-          <Button
-            url="/"
-            theme='primary'
-            type="button"
-            title="Interested in partnering?"
-          />
+          <Button theme="inverted">
+            <Link to="/">My booking software is not listed</Link>
+          </Button>
+          <Button theme='primary'>
+            <Link to="/">Interested in partnering?</Link>
+          </Button>
         </Container>
       </Container>
     </IssuesWrapper>

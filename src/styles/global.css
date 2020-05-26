@@ -25,7 +25,7 @@ body {
 body .theme-changer {
   position: relative;
   overflow: hidden;
-  top: -100px;
+  top: -1000px;
 }
 
 body .mode-container {

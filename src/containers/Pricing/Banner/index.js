@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import { useStaticQuery, graphql } from 'gatsby'
 import BannerWrapper from './banner.style'
 import Container from '../../../components/Container'
@@ -42,13 +43,9 @@ const Banner = () => {
               </ListItem>            
             )}
           </List>
-          <Button
-            url="/"
-            theme='secondary'
-            type="button"
-            className="demo-btn"
-            title="Sing up for free"
-          />
+          <Button theme="secondary" className="demo-btn">
+            <Link to="/">Sing up for free</Link>
+          </Button>
         </Container>
       </Container>
     </BannerWrapper>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import { useStaticQuery, graphql } from 'gatsby'
 import IndustriesWrapper from './industries.style'
 import Container from '../../../components/Container'
@@ -35,13 +36,9 @@ const Industries = () => {
           {data.homeJson.industries_FEATURES.map(features =>
             <Text content={features.text} key={features.id}/>
           )}
-          <Button
-            url="/"
-            theme='secondary'
-            type="button"
-            className="demo-btn"
-            title="Sing up for free"
-          />
+          <Button theme='secondary' type="button" className="demo-btn">
+            <Link to="/">Sing up for free</Link>
+          </Button>
         </Container>
         <Container className="right-side">
           {data.homeJson.INDUSTRIES.map(industries =>

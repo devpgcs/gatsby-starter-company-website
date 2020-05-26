@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 const BannerWrapper = styled.div`
   max-width: 1200px;
-  margin: 50px auto;
+  margin: 125px auto 50px;
   margin-bottom: 0;
   padding: 0 30px;
   display: flex;
@@ -20,16 +20,23 @@ const BannerWrapper = styled.div`
     margin-top: 2vw;
     align-items: start;
     align-content: center;
-    
+    @media (max-width: 1024px) {
+      width: 100%;
+      margin-top: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
     h1 {
       max-width: 550px;
       width: 100%;
-      @media(max-width: 1080px) {
-        max-width: 500px;
-      }
-      @media(max-width: 991px) {
+      @media(max-width: 1024px) {
         max-width: 750px;
         text-align: center;
+      }
+      @media (max-width: 768px) {
+        font-size: 32px;
       }
 
       img {
@@ -45,38 +52,41 @@ const BannerWrapper = styled.div`
       max-width: 1200px;
       width: 100%;
       margin: 30px 0 30px;
-      @media (max-width: 991px) {
+      @media (max-width: 1024px) {
         max-width: 750px;
         text-align: center;
+      }
+      @media (max-width: 768px) {
+        font-size: 20px;
       }
     }
 
     button {
-      @media(max-width: 991px) {
-        margin: 0 30px;
+      @media(max-width: 1024px) {
+        margin: 0 60px;
       }
     }
 
     .sing-up {
       width: 100%;
       margin-top: 80px;
+      @media(max-width: 1024px) {
+        max-width: 750px;
+        text-align: center;
+      }
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
 
       a {
         font-weight: bold;  
         color: var(--primary);
+        @media (max-width: 768px) {
+          font-size: 14px;
+        }
       }
-
-      @media(max-width: 991px) {
-        max-width: 750px;
-        text-align: center;
-      }
-    } @media (max-width: 991px) {
-      width: 100%;
-      margin-top: 0;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
+    } 
+    
   }
 
   .right {
@@ -89,7 +99,7 @@ const BannerWrapper = styled.div`
       max-height: 500px;
       width: 40vw;
       height: 75vh;
-    } @media (max-width: 991px) {
+    } @media (max-width: 1024px) {
       display: none;
     }
   }

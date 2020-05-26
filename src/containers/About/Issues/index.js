@@ -9,10 +9,14 @@ const Issue = () => {
   return (
     <IssueWrapper>
       <Container className="case">
-        <Heading as="h1" theme="contrast" title="Get everything controled"/>
-        <Text content="Issues are tracked so that you can handle them in house, send them out to a vendor, or schedule a future task for an employee."/>
+        <div className="text-wrapper">
+          <Heading as="h1" theme="contrast" title="Get everything controled"/>
+          <Text content="Issues are tracked so that you can handle them in house, send them out to a vendor, or schedule a future task for an employee."/>
+        </div>
+        <div className="img-wrapper">
+          <Image src="" alt="Issue Image"/>
+        </div>
       </Container>
-      <Image src="" alt="Issue Image"/>
     </IssueWrapper>
   )
 }

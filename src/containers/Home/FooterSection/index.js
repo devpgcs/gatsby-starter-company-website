@@ -13,19 +13,12 @@ const FooterSection = () => {
       homeJson {
         FOOTER_LINKS {
           id
-          link {
-            id
-            path
-            title
-          }
+          path
+          title
         }
         FOOTER_MEMBERS {
           id
-          class
-          img {
-            id
-            source
-          }
+          source
         }
       }
     }
@@ -36,35 +29,28 @@ const FooterSection = () => {
       <Container className="case">
         <Container className="main-col one">
           <Text className="footer-titles" content="Browse us" />
-          {data.homeJson.FOOTER_LINKS.map(e => (
-            <List className="col" key={e.id}>
-              {e.link.map(i => (
-                <ListItem url={i.path} key={i.id}>
-                  <Link to={i.path}>{i.title}</Link>
-                </ListItem>
-              ))}
-            </List>
-          ))}
+          <List className="col">
+            {data.homeJson.FOOTER_LINKS.map(i =>
+              <ListItem key={i.id}>
+                <Link to={i.path}>{i.title}</Link>
+              </ListItem>
+            )}
+          </List>
         </Container>
         <Container className="main-col two">
           <Text className="footer-titles" content="Proud member of" />
-          {data.homeJson.FOOTER_MEMBERS.map(e => (
-            <Container className={e.class} key={e.id}>
-              {e.img.map(i => (
-                <img src="" alt="Member Logo" key={i.id} />
-              ))}
-            </Container>
-          ))}
+          <Container className="logos-wrapper">
+            {data.homeJson.FOOTER_MEMBERS.map(member =>
+              <img src={member.source} alt="Member Logo" key={member.id}/>
+            )}
+          </Container>
         </Container>
+        <span className="divider"/>
         <Container className="main-col three">
           <Text className="footer-titles" content="Any questions?" />
-          <Button
-            url="/"
-            type="button"
-            theme="primary"
-            title="Contact us"
-            className="contact-btn"
-          />
+          <Button type="button" theme="primary" className="contact-btn">
+            <Link to="/">Contact us</Link>
+          </Button>
           <Link to="/" className="link">
             <Text content="Terms and Conditions" />
           </Link>

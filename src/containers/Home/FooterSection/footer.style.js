@@ -1,19 +1,27 @@
 import styled from "styled-components"
 
 const FooterWrapper = styled.footer`
+  padding: 30px;
   .case {
     max-width: 1200px;
     width: 100%;
     margin: 120px auto 30px;
-    padding: 0 30px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    
+    @media(max-width: 1024px) {
+      max-width: 750px;
+    }
+
+    @media(max-width: 680px) {
+      margin-top: 120px;
+    }
   }
 
   .main-col {
-    height: calc(auto + 30px);
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
+    @media(max-width: 680px) { margin-bottom: 60px; }
 
     .footer-titles {
       width: 100%;
@@ -21,16 +29,31 @@ const FooterWrapper = styled.footer`
   }
 
   .one {
-    width: 40%;
+    width: 30%;
     align-content: flex-start;
 
+    @media(max-width: 680px) { 
+      width: 100%; 
+    }
+
     ul {
-      padding: 0;
-      width: calc(100% / 3);
-      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
 
       li {
+        width: calc(90% / 3);
+        list-style: none;
         margin-top: 30px;
+
+        @media (max-width: 1024px) {
+          width: calc(95% / 2);
+        }
+
+        @media (max-width: 680px) {
+          width: calc(70% / 2);
+        }
+
         a {
           color: var(--primary);
           font-weight: bold;
@@ -40,53 +63,49 @@ const FooterWrapper = styled.footer`
   }
 
   .two {
-    width: calc(40% - 31px);
-    align-content: space-between;
+    width: 30%;
+    align-content: flex-start;
+    @media(max-width: 680px) { width: 100%; }
 
-    img {
-      border: 1px solid var(--text);
-      height: 40px;
-    }
-
-    .one,
-    .two {
-      width: 80%;
+    .logos-wrapper {
       display: flex;
-      align-items: center;
+      flex-wrap: wrap;
       justify-content: space-between;
     }
 
-    .two {
-      border: none;
+    img {
+      width: calc(90% / 3);
+      display: block;
+      border: 1px solid var(--text);
+      height: 40px;
+      margin-top: 30px;
+      @media (max-width: 1024px) {
+        width: calc(95% / 2);
+      }
     }
+  }
+
+  .divider {
+    display: block;
+    width: 1px;
+    background: var(--text);
+    margin: 0 10px;
   }
 
   .three {
     width: 20%;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: space-between;
-    border-left: 0.5px solid gray;
-    margin-left: 30px;
+    display: block;
+    @media(max-width: 680px) { width: 100%; }
 
-    p,
-    button {
-      margin-left: 30px;
-    }
-
-    .contact-btn {
-      width: 100%;
-    }
-
-    .link {
-      width: 100%;
-    }
+    p, button { margin-bottom: 15px; }
   }
 
   .copyright {
+    max-width: 1200px;
     width: 100%;
     text-align: center;
     margin-top: 120px;
+    @media(max-width: 680px) { margin-top: 30px; }
   }
 `
 

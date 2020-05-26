@@ -1,77 +1,150 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 
-const NavbarWrapper = styled.div`
-  box-shadow: 0px 5px 15px var(--shadow);
+const MobileWrapper = styled.section`
+  z-index: 1;
+  width: 100%;
+  height: 45px;
+  position: fixed;
+  top: 0;
+  display: block;
+  padding: 15px 0;
+  background: var(--bg-color);
+  box-shadow: 5px 2px 5px 1px var(--shadow);
 
   .case {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 15px 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+    padding: 0 30px;
 
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-  }
+    .navbar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
 
-  .colOne {
-    width: 200px;
-    img {
-      display: block;
-      border: 1px solid var(--text);
-      width: 200px;
-      height: 40px;
-    }
-  }
+      .logo, .list ul, .sing-up { display: flex; flex-wrap: wrap; align-items: center; }
 
-  .colTwo {
-    justify-content: center;
-    width: calc(100% - 400px);
+      .logo { 
+        width: 13%;
+        justify-content: flex-start;
 
-    a {
-      font-weight: normal;
-      color: var(--headings);
-    }
-
-    ul,
-    li {
-      list-style: none;
-      padding: 0;
-    }
-
-    ul {
-      width: 100%;
-      padding: 0 8%;
-      display: inline-flex;
-      justify-content: space-around;
-
-      @media (max-width: 1080px) {
-        justify-content: center;
-        padding: 0;
+        img {
+          display: block;
+          width: 100%;
+          height: 40px;
+          border: 1px solid var(--text);
+        }
       }
 
-      li {
-        @media (max-width: 1080px) {
-          width: auto;
-          padding: 0 8px;
+      .list {
+        width: 50%;
+      }
+
+      .list ul {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+
+        li a { color: var(--headings); }
+      }
+
+      .sing-up {
+        width: 22%;
+        justify-content: space-between;
+        .login {
+          color: var(--text);
+        }
+
+        button a {
+          font-weight: bold;
+        }
+      }
+    }    
+  }
+
+  .mobile-case {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 0 30px;
+    
+    .navbar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      
+      .logo, .list ul, .sing-up { display: flex; flex-wrap: wrap; align-items: center; }
+      
+      .logo { 
+        width: 13%;
+        justify-content: flex-start;
+        
+        img {
+          display: block;
+          width: 100%;
+          height: 40px;
+          border: 1px solid var(--text);
+        }
+      }
+      
+      .burger-btn {
+        background: none;
+        padding: 0;
+        width: 30px;
+        outline: none;
+      }
+      
+      .list {
+        z-index: 1;
+        background: var(--bg-color);
+        position: fixed;
+        top: 0;
+        right: -350px;
+        transition: right ease 0.5s;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        align-content: flex-start;
+        width: 300px;
+        height: 100%;
+        box-shadow: -5px 5px 5px 1px var(--shadow);
+
+        button:nth-child(1) {
+          width: 20px;
+          height: 20px;
+          color: #eee;
+          padding: 0;
+          border-radius: 0;
+          background: var(--secondary);
+        }
+        
+        label { position: relative; left: 100%; }
+        
+        ul {
+          list-style: none;
+          padding: 30px 60px 60px;
+          width: 100%;
+
+          li { 
+            width: 100%; 
+            margin-bottom: 30px;
+            
+            a { color: var(--text); }
+          }
+        }
+
+        .sing-up {
+          padding: 0 60px;
+
+          .login { width: 100%; margin-bottom: 15px; color: var(--text); }
+
+          button a { font-weight: bold; }
         }
       }
     }
   }
-
-  .colThree {
-    width: 200px;
-    justify-content: space-between;
-    button a {
-      font-weight: bold;
-      font-size: 14px;
-    }
-  }
 `
 
-export default NavbarWrapper
+export default MobileWrapper

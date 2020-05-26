@@ -147,98 +147,71 @@
   "FOOTER_MEMBERS": [
     {
       "id": 1,
-      "class": "col one",
-      "img": [
-        {
-          "id": 1,
-          "source": "source"
-        },
-        {
-          "id": 2,
-          "source": "source"
-        },
-        {
-          "id": 3,
-          "source": "source"
-        }
-      ]
+      "source": "source"
     },
     {
       "id": 2,
-      "class": "col two",
-      "img": [
-        {
-          "id": 1,
-          "source": "source"
-        },
-        {
-          "id": 2,
-          "source": "source"
-        }
-      ]
+      "source": "source"
+    },
+    {
+      "id": 3,
+      "source": "source"
+    },
+    {
+      "id": 4,
+      "source": "source"
+    },
+    {
+      "id": 5,
+      "source": "source"
     }
   ],
 
   "FOOTER_LINKS": [
     {
       "id": 1,
-      "link": [
-        {
-          "id": 1,
-          "title": "Reviews",
-          "path": "/"
-        },
-        {
-          "id": 2,
-          "title": "Features",
-          "path": "/features"
-        },
-        {
-          "id": 3,
-          "title": "Pricing",
-          "path": "/pricing"
-        }
-      ]
+      "title": "Reviews",
+      "path": "/"
     },
     {
       "id": 2,
-      "link": [
-        {
-          "id": 1,
-          "title": "Blog",
-          "path": "/blog"
-        },
-        {
-          "id": 2,
-          "title": "How it works",
-          "path": "/about"
-        },
-        {
-          "id": 3,
-          "title": "Integrations",
-          "path": "/integrations"
-        }
-      ]
+      "title": "Features",
+      "path": "/features"
     },
     {
       "id": 3,
-      "link": [
-        {
-          "id": 1,
-          "title": "Demo",
-          "path": "/"
-        },
-        {
-          "id": 2,
-          "title": "Log in",
-          "path": "/"
-        },
-        {
-          "id": 3,
-          "title": "Sing up",
-          "path": "/"
-        }
-      ]
+      "title": "Pricing",
+      "path": "/pricing"
+    },
+    {
+      "id": 4,
+      "title": "Blog",
+      "path": "/blog"
+    },
+    {
+      "id": 5,
+      "title": "How it works",
+      "path": "/about"
+    },
+    {
+      "id": 6,
+      "title": "Integrations",
+      "path": "/integrations"
+    },
+    {
+      "id": 7,
+      "title": "Demo",
+      "path": "/"
+    },
+    {
+      "id": 8,
+      "title": "Log in",
+      "path": "/"
+    },
+    {
+      "id": 9,
+      "title": "Sing up",
+      "path": "/"
     }
   ]
 }

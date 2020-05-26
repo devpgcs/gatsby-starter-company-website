@@ -2,6 +2,10 @@ import styled from "styled-components"
 import TrialBg from "../../../images/bg.svg"
 
 const DrawTrialWrapper = styled.div`
+  @media (max-width: 768px) {
+    h2 { font-size: 20px; }
+    p, input { font-size: 14px; }
+  }
 
   .draw {
     background-image: url('${TrialBg}');
@@ -19,6 +23,7 @@ const DrawTrialWrapper = styled.div`
       width: 472px;
       margin-bottom: 56px;
       text-align: center;
+      padding: 0 30px;
     }
   }
 
@@ -41,7 +46,7 @@ const DrawTrialWrapper = styled.div`
       
       .form-case {
         height: 100%;
-        margin: 0 60px;
+        margin: 0 30px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -65,7 +70,13 @@ const DrawTrialWrapper = styled.div`
         justify-content: center;
         width: 100%;
 
-        p { margin-left: 6px; }
+        p { 
+          margin-left: 6px; 
+          @media(max-width: 425px) {
+            width: 200px;
+            text-align: center;
+          }
+        }
       }
     }
   }

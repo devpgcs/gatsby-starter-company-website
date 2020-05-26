@@ -3,25 +3,28 @@ import styled from 'styled-components'
 const TaskWrapper = styled.section`
   .case {
     max-width: 1200px;
-    margin: 30px auto 0;
-    padding: 0 30px;
+    margin: 0 auto;
+    padding: 60px 30px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     z-index: 1;
-
-    .left-side, .right-side {
-      margin-bottom: 60px;
-      margin-top: 60px
+    @media (max-width: 1024px) {
+      max-width: 750px;
     }
 
     .left-side {
-      width: 45%;
+      width: 40%;
+      max-width: 500px;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      margin-right: 30px;
+
+      @media (max-width: 768px) {
+        width: 100%;
+        margin: 0 auto 60px;
+      }      
 
       .description {
         width: 100%;
@@ -29,21 +32,35 @@ const TaskWrapper = styled.section`
         text-align: center;
 
         p {
-          width: 400px;
           margin: 0 auto;
+          @media (max-width: 768px) {
+            font-size: 14px;
+            margin
+          }
         }
       }
     }
 
     .right-side {
-      width: 45%;
+      width: 40%;
+      max-width: 500px;
+      max-height: 300px;
+
+      @media (max-width: 768px) {
+        width: 100%;
+        margin: 0 auto;
+      }
+
       img {
         display: block;
-        max-width: 450px;
-        width: 50vw;
-        max-height: 450px;
-        height: 60vh;
+        max-width: 500px;
+        max-height: 300px;
+        width: 100%;
+        height: 56vw;
         border: 1px solid var(--text);
+        @media (max-width: 768px) {
+          margin: 0 auto;
+        }
       }
     }
   }
