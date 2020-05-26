@@ -25,6 +25,9 @@ const FooterWrapper = styled.footer`
 
     .footer-titles {
       width: 100%;
+      @media(max-width: 768px) {
+        font-size: 14px;
+      }
     }
   }
 
@@ -57,6 +60,9 @@ const FooterWrapper = styled.footer`
         a {
           color: var(--primary);
           font-weight: bold;
+          @media(max-width: 768px) {
+            font-size: 14px;
+          }
         }
       }
     }
@@ -97,7 +103,12 @@ const FooterWrapper = styled.footer`
     display: block;
     @media(max-width: 680px) { width: 100%; }
 
-    p, button { margin-bottom: 15px; }
+    p, button { 
+      margin-bottom: 15px; 
+      @media(max-width: 768px) {
+        font-size: 14px;
+      }
+    }
   }
 
   .copyright {
@@ -105,7 +116,14 @@ const FooterWrapper = styled.footer`
     width: 100%;
     text-align: center;
     margin-top: 120px;
-    @media(max-width: 680px) { margin-top: 30px; }
+
+    @media(max-width: 768px) {
+      font-size: 14px;
+    }
+    
+    @media(max-width: 680px) { 
+      margin-top: 30px; 
+    }
   }
 `
 

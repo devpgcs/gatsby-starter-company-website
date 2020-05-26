@@ -19,6 +19,10 @@ body {
   background: var(--bg-color);
   transition: all ease 0.3s;
 
+  .navbar .list ul li a {
+    color: var(--headings);
+  }
+
   .theme-changer { position: relative; overflow: hidden; top: -1000px; }
 
   .mode-container {
@@ -69,6 +73,9 @@ body {
       text-decoration: none;
       font-weight: bold;
       font-size: 16px;
+      @media(max-width: 768px) {
+        font-size: 14px;
+      }
     }
   }
 
@@ -94,6 +101,10 @@ body.dark {
   --icolor: var(--contrast);
   
   transition: all ease 0.3s;
+
+  .navbar .list ul li a {
+    color: var(--text);
+  }
 
   .mode-container {
     position: relative;

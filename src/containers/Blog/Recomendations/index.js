@@ -30,7 +30,7 @@ const Recomendations = () => {
           <Container className="blog-post" key={blog.id}>
             <Image src={blog.image} alt="some image"/>
             <Container className="post-info">
-              <Text content={<strong>{blog.post}</strong>}/>
+              <Text className="title" content={<strong>{blog.post}</strong>}/>
               <Heading as="h2" theme="primary" title={blog.title}/>
               <Text content={blog.date}/>
             </Container>

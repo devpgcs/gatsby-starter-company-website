@@ -5,6 +5,9 @@ const PartnerWrapper = styled.section`
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 30px;
+    @media (max-width: 1024px) {
+      max-width: 750px;
+    }
 
     .border {
 
@@ -19,6 +22,9 @@ const PartnerWrapper = styled.section`
     h2 {
       width: 100%;
       text-align: center;
+      @media (max-width: 768px) {
+        font-size: 20px;
+      }
     }
 
     .integrations {
@@ -32,12 +38,24 @@ const PartnerWrapper = styled.section`
         width: 60px;
         height: 60px;
         border: 1px solid var(--text);
+        @media (max-width: 768px) {
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    p { 
+      @media (max-width: 768px) {
+        font-size: 14px;
       }
     }
 
     p a {
       color: var(--primary);
       font-weight: bold;
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
     }
   }
 `

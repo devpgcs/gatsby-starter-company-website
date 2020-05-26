@@ -11,6 +11,15 @@ const RecomendationWrapper = styled.section`
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media(max-width: 1200px) {
+      max-width: 800px;
+    }
+
+    @media(max-width: 800px) {
+      max-width: 500px;
+    }
+
+    
     .border {
       display: block;
       margin: 0 auto 10px;
@@ -23,19 +32,30 @@ const RecomendationWrapper = styled.section`
       width: 100%;
       text-align: center;
       margin-bottom: 30px;
+      @media(max-width: 768px) {
+        font-size: 20px;
+      }
     }
-
+    
     .blog-post {
-      min-width: 350px;
-      width: calc(90% / 3);
+      max-width: 350px;
+      width: 100%;
       height: 350px;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      @media (max-width: 991px) {
-        margin-bottom: 30px;
+      &:nth-child(4) {
+        @media(max-width: 400px) { margin-bottom: 90px; }
       }
 
+      @media (max-width: 1200px) {
+        margin-bottom: 60px;
+      }
+
+      @media(max-width: 800px) {
+        margin: 0 auto 60px;
+      }
+      
       img {
         display: block;
         width: 100%;
@@ -47,7 +67,8 @@ const RecomendationWrapper = styled.section`
 
       .post-info {
         background: var(--bg-color);
-        width: 240px;
+        max-width: 350px;
+        width: 69%;
         min-height: 200px;
         height: auto;
         position: relative;
@@ -58,12 +79,31 @@ const RecomendationWrapper = styled.section`
         border-radius: 10px;
         box-shadow: 0px 5px 20px var(--shadow);
         padding: 0 30px;
+        @media(max-width: 768px) {
+          p {
+            font-size: 14px;
 
-        p:nth-child(1) {
-          margin-top: 30px;
+            @media(max-width: 375px) {
+              text-align: center;
+            }
+          }
         }
 
-        h2:nth-child(2) { margin-top: 15px; font-size: 22px; text-align: left; }
+        .title { margin-top: 30px;}
+
+        h2:nth-child(2) { 
+          margin-top: 15px; 
+          font-size: 22px; 
+          text-align: left; 
+
+          @media(max-width: 768px) {
+            font-size: 20px;
+          }
+          
+          @media(max-width: 375px) {
+            text-align: center;
+          }
+        }
 
         p:nth-child(3) {
           margin-top: 45px;

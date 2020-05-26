@@ -19,6 +19,7 @@ const DrawTrialWrapper = styled.div`
     display: flex; 
     align-items: flex-end;
     justify-content: center;
+
     h2 {
       width: 472px;
       margin-bottom: 56px;

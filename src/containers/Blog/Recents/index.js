@@ -36,7 +36,8 @@ const Recents = () => {
         <Heading as="h2" theme="headings" title="Most recent"/>
         <Container className="search-case">
           <span className="search">
-            <Input 
+            <Input
+              className="input"
               inputType="text"
               placeholder="Looking for something in particular?"
               value={inputState}

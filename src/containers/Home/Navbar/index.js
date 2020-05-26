@@ -30,9 +30,9 @@ const Navbar = () => {
       document.querySelector('.list').style.right = '0px' :
       document.querySelector('.list').style.right = '-350px'
   }
-
-    const navbar = (
-      <Container className="case">
+  
+  const navbar = (
+    <Container className="case">
       <Container className="navbar">
         <div className="logo">
           <Image src="" alt="Logo"/>
@@ -83,7 +83,6 @@ const Navbar = () => {
             </Button>
           </div>
         </div>
-        
       </Container>
     </Container>
   )

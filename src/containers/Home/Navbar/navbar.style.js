@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const MobileWrapper = styled.section`
-  z-index: 1;
+  z-index: 2;
   width: 100%;
   height: 45px;
   position: fixed;
@@ -46,8 +46,6 @@ const MobileWrapper = styled.section`
         align-items: center;
         justify-content: space-between;
         list-style: none;
-
-        li a { color: var(--headings); }
       }
 
       .sing-up {
@@ -131,14 +129,27 @@ const MobileWrapper = styled.section`
             width: 100%; 
             margin-bottom: 30px;
             
-            a { color: var(--text); }
+            a { 
+              color: var(--text);
+              font-weight: bold;
+              @media(max-width: 768px) {
+                font-size: 14px;
+              }
+            }
           }
         }
 
         .sing-up {
           padding: 0 60px;
 
-          .login { width: 100%; margin-bottom: 15px; color: var(--text); }
+          .login { 
+            width: 100%; 
+            margin-bottom: 15px; 
+            color: var(--text); 
+            @media(max-width: 768px) {
+              font-size: 14px;
+            }
+          }
 
           button a { font-weight: bold; }
         }
