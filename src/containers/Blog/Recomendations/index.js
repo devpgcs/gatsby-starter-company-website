@@ -1,5 +1,5 @@
 import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
+import { Link, useStaticQuery, graphql } from 'gatsby'
 import RecomendationWrapper from './recomendations.style'
 import Container from '../../../components/Container'
 import Heading from '../../../components/Heading'
@@ -31,7 +31,9 @@ const Recomendations = () => {
             <Image src={blog.image} alt="some image"/>
             <Container className="post-info">
               <Text className="title" content={<strong>{blog.post}</strong>}/>
-              <Heading as="h2" theme="primary" title={blog.title}/>
+              <Link to="/">
+                <Heading as="h2" theme="primary" title={blog.title}/>
+              </Link>
               <Text content={blog.date}/>
             </Container>
           </Container>

@@ -45,7 +45,7 @@ const RecomendationWrapper = styled.section`
       flex-wrap: wrap;
       justify-content: center;
       &:nth-child(4) {
-        @media(max-width: 400px) { margin-bottom: 90px; }
+        @media(max-width: 353px) { margin-bottom: 90px; }
       }
 
       @media (max-width: 1200px) {
@@ -89,21 +89,34 @@ const RecomendationWrapper = styled.section`
           }
         }
 
-        .title { margin-top: 30px;}
-
-        h2:nth-child(2) { 
+        a {
+          width: 100%;
+          display: block;
           margin-top: 15px; 
-          font-size: 22px; 
-          text-align: left; 
-
-          @media(max-width: 768px) {
+          font-size: 20px;
+          @media (max-width: 768px) {
             font-size: 20px;
           }
-          
-          @media(max-width: 375px) {
-            text-align: center;
+
+          h2 {
+            text-align: left;
+            @media (max-width: 375px) { text-align: center; }
+          }
+
+          h2:nth-child(2) {
+            font-size: 22px; 
+
+            @media(max-width: 768px) {
+              font-size: 20px;
+            }
+
+            @media(max-width: 375px) {
+              text-align: center;
+            }
           }
         }
+
+        .title { margin-top: 30px;}
 
         p:nth-child(3) {
           margin-top: 45px;

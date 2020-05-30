@@ -59,7 +59,6 @@ const DrawTrialWrapper = styled.div`
         width: 100%;
         border: 1px solid #3F7DC6;
         box-sizing: border-box;
-        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.08);
         border-radius: 5px;
         padding: 8px 21px;
       }

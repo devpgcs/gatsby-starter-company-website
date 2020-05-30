@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
+import { Link, useStaticQuery, graphql } from 'gatsby'
 import RecentsWrapper from './recents.style'
 import Container from '../../../components/Container'
 import Heading from '../../../components/Heading'
@@ -27,7 +27,6 @@ const Recents = () => {
   const inputHandler = e => {
     setInputState(e.target.value);
   }
-  console.log(inputState)
   
   return (
     <RecentsWrapper>
@@ -38,7 +37,7 @@ const Recents = () => {
           <span className="search">
             <Input
               className="input"
-              inputType="text"
+              type="text"
               placeholder="Looking for something in particular?"
               value={inputState}
               onChange={inputHandler}
@@ -50,7 +49,9 @@ const Recents = () => {
             <Image src={blog.image} alt="some image"/>
             <Container className="post-info">
               <Text content={<strong>{blog.post}</strong>}/>
-              <Heading as="h2" theme="primary" title={blog.title}/>
+              <Link to="/">
+                <Heading as="h2" theme="primary" title={blog.title}/>
+              </Link>
               <Text content={blog.date}/>
             </Container>
           </Container>

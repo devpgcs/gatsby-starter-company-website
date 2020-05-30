@@ -1,42 +1,33 @@
 import React from "react"
 import InputWrapper from "./input.style"
 
-const Input = ({
-  inputType,
-  inputName,
-  className,
-  JSid,
-  value,
-  onClick,
-  onChange,
-  isChecked,
-  placeholder,
-  ...props
-}) => {
-  if (inputType === "checkbox") {
+const Input = ( props ) => {
+  if (props.type === "checkbox") {
     return (
       <InputWrapper>
+        <label>{props.label}</label>
         <input
           type="checkbox"
-          name={inputName}
-          className={className}
-          id={JSid}
-          value={value}
-          checked={isChecked}
+          name={props.inputName}
+          className={props.className}
+          id={props.JSid}
+          value={props.value}
+          checked={props.isChecked}
           {...props}
         />
       </InputWrapper>
     )
-  } else if (inputType === "textarea") {
+  } else if (props.type === "textarea") {
     return (
       <InputWrapper>
+        <label>{props.label}</label>
         <textarea
-          name={inputName}
-          className={className}
-          id={JSid}
-          value={value}
-          onChange={onChange}
-          placeholder={placeholder}
+          name={props.inputName}
+          className={props.className}
+          id={props.JSid}
+          value={props.value}
+          onChange={props.onChange}
+          placeholder={props.placeholder}
           {...props}
         />
       </InputWrapper>
@@ -44,14 +35,15 @@ const Input = ({
   } else {
     return (
       <InputWrapper>
+        <label>{props.label}</label>
         <input
-          type={inputType}
-          name={inputName}
-          className={className}
-          id={JSid}
-          value={value}
-          onChange={onChange}
-          placeholder={placeholder}
+          type={props.type}
+          name={props.inputName}
+          className={props.className}
+          id={props.JSid}
+          value={props.value}
+          onChange={props.onChange}
+          placeholder={props.placeholder}
           {...props}
         />
       </InputWrapper>

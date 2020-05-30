@@ -21,7 +21,7 @@ const Partner = () => {
           <Image src="" alt="logo"/>
         </Container>
         <Text>
-          Interested in partnering? So are we, just <Link to="/">contact us here</Link>
+          Interested in partnering? So are we, just <Link to="/contact">contact us here</Link>
         </Text>
       </Container>
     </PartnerWrapper>

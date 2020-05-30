@@ -88,7 +88,7 @@ const Navbar = () => {
   )
 
   return (
-    <NavbarWrapper>
+    <NavbarWrapper className="nav">
       {
         document.body.clientWidth > 1024 ?
           navbar : mobile_navbar

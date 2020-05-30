@@ -156,17 +156,30 @@ const RecentsWrapper = styled.section`
           margin-top: 30px;
         }
 
-        h2:nth-child(2) { 
+        a {
+          width: 100%;
+          display: block;
           margin-top: 15px; 
-          font-size: 22px; 
-          text-align: left; 
-
-          @media(max-width: 768px) {
+          font-size: 20px;
+          @media (max-width: 768px) {
             font-size: 20px;
           }
-          
-          @media(max-width: 375px) {
-            text-align: center;
+
+          h2 {
+            text-align: left;
+            @media (max-width: 375px) { text-align: center; }
+          }
+
+          h2:nth-child(2) {
+            font-size: 22px; 
+
+            @media(max-width: 768px) {
+              font-size: 20px;
+            }
+
+            @media(max-width: 375px) {
+              text-align: center;
+            }
           }
         }
 

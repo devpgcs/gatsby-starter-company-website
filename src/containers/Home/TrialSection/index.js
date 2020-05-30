@@ -9,11 +9,13 @@ import Form from "../../../components/Form"
 import DrawTrialWrapper from "./trial.style"
 
 const TrialSection = () => {
-  const [inputState, setInputState] = useState("")
+  const [emailState, setEmailState] = useState('')
+  const [passwordState, setPasswordState] = useState('')
+  const [confirmPasswordState, setConfirmPasswordState] = useState('')
 
-  const inputHandler = e => {
-    setInputState(e.target.value)
-  }
+  const emailInputHandler = e => { setEmailState(e.target.value) }
+  const passwordHandler = e => { setPasswordState(e.target.value) }
+  const confirmPasswordHandler = e => { setConfirmPasswordState(e.target.value) }
 
   return (
     <DrawTrialWrapper>
@@ -34,21 +36,25 @@ const TrialSection = () => {
                 title="Start Free 30-day trial"
               />
               <Input
-                inputType="email"
+                type="email"
                 className="input-field"
                 placeholder="Email"
-                value={inputState}
-                onChange={inputHandler}
+                value={emailState}
+                onChange={emailInputHandler}
               />
               <Input
-                inputType="password"
+                type="password"
                 className="input-field"
                 placeholder="Password"
+                value={passwordState}
+                onChange={passwordHandler}
               />
               <Input
-                inputType="password"
+                type="password"
                 className="input-field"
                 placeholder="Repeat password"
+                value={confirmPasswordState}
+                onChange={confirmPasswordHandler}
               />
               <Container className="terms">
                 <input type="checkbox" />

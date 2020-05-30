@@ -49,9 +49,9 @@ const FooterSection = () => {
         <Container className="main-col three">
           <Text className="footer-titles" content="Any questions?" />
           <Button type="button" theme="primary" className="contact-btn">
-            <Link to="/">Contact us</Link>
+            <Link to="/contact">Contact us</Link>
           </Button>
-          <Link to="/" className="link">
+          <Link to="/terms" className="link">
             <Text content="Terms and Conditions" />
           </Link>
           <Link to="/" className="link">

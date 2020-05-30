@@ -6,5 +6,5 @@ export const List = ( props ) => {
 }
 
 export const ListItem = ( props ) => {
-  return <ListElement>{props.children}</ListElement>
+  return <ListElement {...props}>{props.children}</ListElement>
 }

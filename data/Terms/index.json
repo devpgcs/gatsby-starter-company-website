@@ -1,0 +1,73 @@
+{
+  "ASIDE": [
+    {
+      "id": 1,
+      "label": "Terms and conditions",
+      "path": "#tac"
+    },
+    {
+      "id": 2,
+      "label": "Acount Terms",
+      "path": "#at"
+    },
+    {
+      "id": 3,
+      "label": "Payment, Refunds, Upgrading and Downgrading Terms",
+      "path": "#prudt"
+    },
+    {
+      "id": 4,
+      "label": "Cancellation and Termination",
+      "path": "body"
+    },
+    {
+      "id": 5,
+      "label": "Modifications to the Service and Prices",
+      "path": "body"
+    },
+    {
+      "id": 6,
+      "label": "Copyright and Content Ownership",
+      "path": "body"
+    },
+    {
+      "id": 7,
+      "label": "General Conditions",
+      "path": "body"
+    },
+    {
+      "id": 8,
+      "label": "Terms and conditions",
+      "path": "body"
+    }
+  ],
+
+  "MAIN": [
+    {
+      "id": 1,
+      "idJS": "tac",
+      "heading": "Terms and conditions",
+      "content": [
+        { "id": 1, "paragraph": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga." },
+        { "id": 2, "paragraph": "Duis cursus libero eget elit malesuada, et scelerisque felis sodales. Pellentesque sed orci scelerisque, sodales augue in, sodales elit. Sed maximus interdum risus, at pharetra elit pulvinar nec. Vestibulum sed rhoncus augue, et cursus velit. Suspendisse at justo non neque pulvinar auctor. Maecenas quam dolor, viverra ut elit ac, suscipit fringilla nunc. Nulla facilisi. Nullam risus sem, interdum facilisis elit nec, tempor consequat purus. Duis ultricies est vitae pharetra feugiat. Pellentesque eget tortor sit amet dui varius finibus. Cras sagittis tristique leo. Nam lobortis tortor a arcu pellentesque, at efficitur ante facilisis. Nullam accumsan nec neque at placerat." }
+      ]
+    },
+    {
+      "id": 2,
+      "idJS": "at",
+      "heading": "Account Terms",
+      "content": [
+        { "id": 1, "paragraph": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga." }
+      ]
+    },
+    {
+      "id": 3,
+      "idJS": "prudt",
+      "heading": "Payment, Refunds, Upgrading and Downgrading Terms",
+      "content": [
+        { "id": 1, "paragraph": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga." },
+        { "id": 2, "paragraph": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga." }
+      ]
+    }
+  ]
+}

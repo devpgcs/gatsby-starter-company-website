@@ -26,7 +26,7 @@ const Features = () => {
         <span className="border"/>
         <Heading as="h2" title="Let's talk about highlights" theme="headings"/>
         <Text>
-          All our <Link to="/">features</Link> are focused on making things easier for you.
+          All our <Link to="/features">features</Link> are focused on making things easier for you.
         </Text>
         {data.homeJson.FEATURES.map(feature =>
           <Container className="feature" key={feature.id}>

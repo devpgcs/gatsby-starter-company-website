@@ -9,7 +9,7 @@ const Integrations = () => (
   <SectionWrapper>
     <Container className="case">
       <Text>
-        Looking for integrations? Well... We can work with  <Link to="/">just about anyone</Link>... here are a few
+        Looking for integrations? Well... We can work with  <Link to="/integrations">just about anyone</Link>... here are a few
       </Text>
       <Container className="logos">
         <Image src="" alt="logo"/>

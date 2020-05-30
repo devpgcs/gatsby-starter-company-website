@@ -97,7 +97,7 @@ const BannerWrapper = styled.section`
             margin: 0;
             margin-right: 20px;
             @media (max-width: 425px) {
-              padding: 0 100px; 
+              padding: 0 150px; 
               margin-right: 0;
               margin-bottom: 15px;
             }
