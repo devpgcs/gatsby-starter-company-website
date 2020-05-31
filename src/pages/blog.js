@@ -8,11 +8,11 @@ import Footer from '../containers/Home/FooterSection'
 
 export default () => (
   <>
-    <Navbar/>
-    <Banner/>
-    <Recomendations/>
-    <Recents/>
-    <TrialSection/>
-    <Footer/>
+    <Navbar />
+    <Banner />
+    <Recomendations />
+    <Recents />
+    <TrialSection />
+    <Footer />
   </>
 )

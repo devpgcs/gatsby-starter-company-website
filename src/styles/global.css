@@ -4,13 +4,13 @@
 }
 
 :root {
-  --primary: #2D7EDC;
+  --primary: #2d7edc;
   --oPrimary: rgb(45, 126, 220, 0.15);
   --secondary: #fe8b72;
   --inverted: var(--contrast);
   --text: #787878;
   --contrast: #f8f8f8;
-  --headings: #304A66;
+  --headings: #304a66;
   --icolor: var(--primary);
   --bg-color: #fdfdfd;
   --shadow: #e3e3e3;
@@ -46,7 +46,12 @@ body .mode-container .sun {
   display: none;
 }
 
-body h1, body h2, body h3, body a, body .navbar a, body button a {
+body h1,
+body h2,
+body h3,
+body a,
+body .navbar a,
+body button a {
   font-family: Quicksand;
   font-weight: normal;
 }
@@ -78,14 +83,20 @@ body h3 {
   line-height: 22px;
 }
 
-body p, body input, body textarea, body label {
+body p,
+body input,
+body textarea,
+body label {
   font-family: Poppins;
   font-size: 16px;
   line-height: 24px;
 }
 
 @media (max-width: 768px) {
-  body p, body input, body textarea, body label {
+  body p,
+  body input,
+  body textarea,
+  body label {
     font-size: 14px;
   }
 }
@@ -162,15 +173,17 @@ body.dark .colTwo a {
 
 body.dark form {
   -webkit-box-shadow: 0px -5px 20px var(--shadow);
-          box-shadow: 0px -5px 20px var(--shadow);
+  box-shadow: 0px -5px 20px var(--shadow);
 }
 
-body.dark input, body.dark textarea {
+body.dark input,
+body.dark textarea {
   color: var(--contrast);
   opacity: 0.4;
 }
 
-body.dark input:focus, body.dark textarea:focus {
+body.dark input:focus,
+body.dark textarea:focus {
   opacity: 1;
 }
 /*# sourceMappingURL=global.css.map */

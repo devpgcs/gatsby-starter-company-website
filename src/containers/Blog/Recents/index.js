@@ -22,17 +22,17 @@ const Recents = () => {
     }
   `)
 
-  const [inputState, setInputState] = useState('');
+  const [inputState, setInputState] = useState('')
 
   const inputHandler = e => {
-    setInputState(e.target.value);
+    setInputState(e.target.value)
   }
-  
+
   return (
     <RecentsWrapper>
       <Container className="case">
-        <span className="border"/>
-        <Heading as="h2" theme="headings" title="Most recent"/>
+        <span className="border" />
+        <Heading as="h2" theme="headings" title="Most recent" />
         <Container className="search-case">
           <span className="search">
             <Input
@@ -44,18 +44,18 @@ const Recents = () => {
             />
           </span>
         </Container>
-        {data.blogJson.BLOG_RECENTS.map(blog =>
+        {data.blogJson.BLOG_RECENTS.map(blog => (
           <Container className="blog-post" key={blog.id}>
-            <Image src={blog.image} alt="some image"/>
+            <Image src={blog.image} alt="some image" />
             <Container className="post-info">
-              <Text content={<strong>{blog.post}</strong>}/>
+              <Text content={<strong>{blog.post}</strong>} />
               <Link to="/">
-                <Heading as="h2" theme="primary" title={blog.title}/>
+                <Heading as="h2" theme="primary" title={blog.title} />
               </Link>
-              <Text content={blog.date}/>
+              <Text content={blog.date} />
             </Container>
           </Container>
-        )}
+        ))}
       </Container>
     </RecentsWrapper>
   )

@@ -15,6 +15,10 @@ const MobileWrapper = styled.section`
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 30px;
+    display: block;
+    @media (max-width: 1024px) {
+      display: none;
+    }
 
     .navbar {
       display: flex;
@@ -22,9 +26,15 @@ const MobileWrapper = styled.section`
       align-items: center;
       justify-content: space-between;
 
-      .logo, .list ul, .sing-up { display: flex; flex-wrap: wrap; align-items: center; }
+      .logo,
+      .list ul,
+      .sing-up {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+      }
 
-      .logo { 
+      .logo {
         width: 13%;
         justify-content: flex-start;
 
@@ -59,26 +69,36 @@ const MobileWrapper = styled.section`
           font-weight: bold;
         }
       }
-    }    
+    }
   }
 
   .mobile-case {
+    display: none;
+    @media (max-width: 1024px) {
+      display: block;
+    }
     max-width: 750px;
     margin: 0 auto;
     padding: 0 30px;
-    
+
     .navbar {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
-      
-      .logo, .list ul, .sing-up { display: flex; flex-wrap: wrap; align-items: center; }
-      
-      .logo { 
+
+      .logo,
+      .list ul,
+      .sing-up {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+
+      .logo {
         width: 13%;
         justify-content: flex-start;
-        
+
         img {
           display: block;
           width: 100%;
@@ -86,15 +106,15 @@ const MobileWrapper = styled.section`
           border: 1px solid var(--text);
         }
       }
-      
+
       .burger-btn {
         background: none;
         padding: 0;
         width: 30px;
         outline: none;
       }
-      
-      .list {
+
+      .list-mobile {
         z-index: 1;
         background: var(--bg-color);
         position: fixed;
@@ -117,22 +137,28 @@ const MobileWrapper = styled.section`
           border-radius: 0;
           background: var(--secondary);
         }
-        
-        label { position: relative; left: 100%; }
-        
+
+        label {
+          position: relative;
+          left: 100%;
+          > div {
+            width: 20px;
+          }
+        }
+
         ul {
           list-style: none;
           padding: 30px 60px 60px;
           width: 100%;
 
-          li { 
-            width: 100%; 
+          li {
+            width: 100%;
             margin-bottom: 30px;
-            
-            a { 
+
+            a {
               color: var(--text);
               font-weight: bold;
-              @media(max-width: 768px) {
+              @media (max-width: 768px) {
                 font-size: 14px;
               }
             }
@@ -142,16 +168,18 @@ const MobileWrapper = styled.section`
         .sing-up {
           padding: 0 60px;
 
-          .login { 
-            width: 100%; 
-            margin-bottom: 15px; 
-            color: var(--text); 
-            @media(max-width: 768px) {
+          .login {
+            width: 100%;
+            margin-bottom: 15px;
+            color: var(--text);
+            @media (max-width: 768px) {
               font-size: 14px;
             }
           }
 
-          button a { font-weight: bold; }
+          button a {
+            font-weight: bold;
+          }
         }
       }
     }

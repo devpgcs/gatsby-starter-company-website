@@ -10,13 +10,13 @@ import Footer from '../containers/Home/FooterSection'
 
 export default () => (
   <>
-    <Navbar/>
-    <Header/>
-    <ModernTask/>
-    <Issues/>
-    <Mobile/>
-    <Rules/>
-    <TrialSection/>
-    <Footer/>
+    <Navbar />
+    <Header />
+    <ModernTask />
+    <Issues />
+    <Mobile />
+    <Rules />
+    <TrialSection />
+    <Footer />
   </>
 )
